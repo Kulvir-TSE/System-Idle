@@ -9,7 +9,7 @@ echo ""
 erts_version=$(grep 'ERTS_VSN' /opt/butler_server/bin/butler_server | head -n 1 | cut -d '"' -f2)
 
 # Run the script
-sudo /opt/butler_server/erts-"$erts_version"/bin/escript /home/gor/SystemIdle/data.escript > /home/gor/f.txt 2>&1
+sudo /opt/butler_server/erts-"$erts_version"/bin/escript /home/gor/SystemIdle/data.escript > /home/gor/SystemIdleExecution.txt 2>&1
 
 # Define Groups
 declare -A groups
